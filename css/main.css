@@ -1,0 +1,300 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: row wrap;
+}
+
+.container{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-flow: row wrap;
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	width: 100%;
+	font-size: 1.875em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.125em;
+}
+h4 {
+	font-size: 0.75;
+	flex-flow: row wrap;
+}
+
+p {
+	font-size: 0,875em;
+	line-height: 21px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-flow: row wrap;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+header h1 {
+	margin: 0;
+	padding: 38px 0;
+	
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 46px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-basis: 100%;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 0 10px;
+	list-style: none;
+	line-height: 30px;
+}
+header nav ul li a {
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section {
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+.bottom-section {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: row wrap;
+
+}
+
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	
+	
+}
+
+.section-one h4 {
+	
+}
+
+.section-two {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+	flex-flow: row wrap;
+	flex-basis: 100%;
+	}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+	}
+
+
+
+@media all and (min-width: 768px) {
+    body {
+      padding: 1em;
+    }
+	
+	header {
+	border-bottom: 3px solid #77a466;
+    width: 100%;
+	}
+	
+	.section-one, .section-two, .section-three {
+	height: auto;
+	border-top: 1px solid #eee;
+	width: 33%;
+	padding: 0 0 5px 0;
+	}
+	
+	
+	h4{
+	padding-left: 10px;	
+	}
+	
+	.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	}
+	
+	.menu {
+	padding-left: 10px;
+	}
+	.menu li {
+	padding: 10px 0;
+	color:#77a466;
+	}
+
+	.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+	padding: 0 10px;
+	}
+
+	.address {
+	font-size: 1em;
+	line-height: 24px;
+	padding-left: 10px;
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	body {
+      padding: 1em;
+    }
+	
+	.container{
+	max-width: 1200px;
+
+	}
+	header {
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	}
+	
+	
+	header h1 {
+	text-align: left;
+	flex-basis: 50%;	
+	
+	}
+	
+    header nav {
+	flex-basis: 50%;
+    justify-content: flex-end;
+	padding: 46px 0;
+	}
+	
+
+    header nav ul li {
+	padding: 0 10px;
+	display: inline;
+		
+	}
+
+	.section-one, .section-two, .section-three {
+	height: auto;
+	border-top: 1px solid #eee;
+    border-bottom: none;
+	}
+
+	.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	
+	}
+	
+	.section-three {
+	border-top: 1px solid #eee;
+	margin: 0 0 0 2px;
+	}
+	
+	
+}
